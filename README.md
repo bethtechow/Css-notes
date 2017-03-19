@@ -149,3 +149,49 @@ table {
 		</table>
 	</body>
 </html>
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title>About Me</title>
+	</head>
+	<body>
+		<img src="https://s3.amazonaws.com/codecademy-blog/assets/46838757.png"/>
+		<p>We're Codecademy! We're here to help you learn to code.</p><br/><br/>
+		<div>
+		<a href="http://www.google.com">Click this <span>BUTTON</span></a>
+		</div>
+	</body>
+</html>
+img {
+	display: block;
+	height: 100px;
+	width: 300px;
+	margin: auto;
+}
+
+p {
+	text-align: center;
+	font-family: Garamond, serif;
+	font-size: 18px;
+}
+
+/*Start adding your CSS below!*/
+div {
+    Height: 50px;
+    width: 120px;
+    border-color: #6495ED;
+    background-color: #BCD2EE;
+    Border-radius: 5px;
+    margin: auto;
+    text-align: center;
+}
+a {
+    text-decoration: none;
+    font-family: Arial;
+   }
+
+span {
+    font-family: Cursive;
+}
+
