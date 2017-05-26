@@ -244,7 +244,7 @@ li p {
     color: #000000; text-decoration:underline;
 }
 
-text on classes and IDs
+text on classes 
 Classes are assigned to HTML elements with the word class and an equals sign, like so:
 
 <div class="square"></div>
@@ -258,3 +258,48 @@ Classes are identified in CSS with a dot (.), like so:
 }
 This allows you to take elements of different types and give them the same styling.
 
+text on IDs
+ID, please!
+IDs, on the other hand, are great for when you have exactly one element that should receive a certain kind of styling.
+
+IDs are assigned to HTML elements with the word id and an equals sign:
+
+<div id="first"></div>
+<div id="second"></div>
+<p id="intro"></p>
+IDs are identified in CSS with a pound sign (#):
+
+#first {
+    height: 50px;
+}
+
+#second {
+    height: 100px;
+}
+
+#intro {
+    color: #FF0000;
+}
+This allows you to apply style to a single instance of a selector, rather than all instances.
+
+text on pseudo class selectors
+You've learned about class selectors. Now it's time to learn about pseudo-class selectors.
+
+A pseudo-class selector is a way of accessing HTML items that aren't part of the document tree (remember the tree structure we talked about earlier?). For instance, it's very easy to see where a link is in the tree. But where would you find information about whether a link had been clicked on or not? It isn't there!
+
+Pseudo-class selectors let us style these kinds of changes in our HTML document. For example, we saw we could change a link's text-decoration property to make it something other than blue and underlined. Using pseudo selectors, you can control the appearance of unvisited and visited links—even links the user is hovering over but hasn't clicked!
+
+The CSS syntax for pseudo selectors is
+
+selector:pseudo-class_selector {
+    property: value;
+}
+It's just that little extra colon (:).
+
+how to change color if you hover over a link
+css page
+a:hover {
+	color: #cc0000;
+	font-weight: bold;
+	text-decoration: none;
+}
