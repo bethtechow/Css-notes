@@ -303,3 +303,15 @@ a:hover {
 	font-weight: bold;
 	text-decoration: none;
 }
+
+a:link {
+    text-decoration: none; color: #008B45;
+}
+a:hover {
+    color: #00FF00;
+}
+a:visited {
+    color: #EE9A00
+}
+
+
