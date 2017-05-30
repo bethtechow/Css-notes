@@ -313,5 +313,57 @@ a:hover {
 a:visited {
     color: #EE9A00
 }
+First child
+Another useful pseudo-class selector is first-child. It's used to apply styling to only the elements that are the first children of their parents. For instance:
 
+p:first-child {
+    color: red;
+}
+Would make all paragraphs that are the first children of their parent elements red.
+
+Nth child
+Well done! You can actually select any child of an element after the first child with the pseudo-class selector nth-child; you just add the child's number in parentheses after the pseudo-class selector. For example,
+
+p:nth-child(2) {
+    color: red;
+}
+Would turn every paragraph that is the second child of its parent element red.
+
+The element that is the child goes before :nth-child; its parent element is the element that contains it.
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+		<title></title>
+	</head>
+	<body>
+		<div>
+			<p>I'm the first child!</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>
+			<p>We're not.</p>			
+		</div>
+	</body>
+</html>
+
+/*Add your CSS below!*/
+p:first-child {
+    font-family: cursive;
+}
+p:nth-child(2) {
+    font-family: Tahoma;
+}
+p:nth-child(3) {
+    color: #CC0000;
+}
+p:nth-child(4) {
+    background-color: #00FF00;
+}
+p:nth-child(5) {
+    font-size: 22px;
+}
 
